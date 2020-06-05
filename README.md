@@ -26,7 +26,8 @@ Disclamer : I am not claiming this is the best way to do things and can certianl
 - The start:dev command starts a server that watches for changes to any of the source javascript files in the project and re-compiles everything when it detects one. This means there's no need to re-compile or even reload the page in the browser after making a change.
 - JS - The 'source code' javascript is in the '/js/' folder. This code is what get transpiled and is not actually included in the product website. The product of transpilation is a 'bundle.js' which ends up in the '/dist/' folder.
 - 'JS/index.js' - This is the 'root' of the transpilation. Other files are picked up via import statements at the top of the file. If a file is never mentioned in the tree of import statements, it will not be included in the bundle.
-- WEB - The 'web' folder contains all the other static content (HTML, CSS, images etc).
+- 'index.html' - The entry point for the website.
+- WEB - The 'web' folder contains all other static content ( CSS, images etc).
 - package.json - 'package.json' contains the operating instructions for Node and a list of all the dependencies used by the project. The definition of 'start:dev' lives there.
 - 'webpack.config.js' - as it's name suggests, is the configuration for Webpack.
 
