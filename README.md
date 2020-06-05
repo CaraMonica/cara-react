@@ -1,5 +1,7 @@
 # :smile_cat: cara-react :smile_cat:
 
+Disclamer : I am not claiming this is the best way to do things and can certianly be improved upon.
+
 ## Overview
 - Entirely client-side Javascript.
 - Written using advanced Javascript features organised in multiple files and transpiled down to a single compressed file ( a 'bundle' ) that contains code to ensure the script works on as many browsers as possible ( 'shims' ). Doing this yourself is a PITA and will result in an unreadable mess.
