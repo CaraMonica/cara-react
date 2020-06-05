@@ -25,6 +25,13 @@ Disclamer : I am not claiming this is the best way to do things and can certianl
 ## How it works
 - The start:dev command starts a server that watches for changes to any of the source javascript files in the project and re-compiles everything when it detects one. This means there's no need to re-compile or even reload the page in the browser after making a change.
 - JS - The 'source code' javascript is in the '/js/' folder. This code is what get transpiled and is not actually included in the product website. The product of transpilation is a 'bundle.js' which ends up in the '/dist/' folder.
+- 'JS/index.js' - This is the 'root' of the transpilation. Other files are picked up via import statements at the top of the file. If a file is never mentioned in the tree of import statements, it will not be included in the bundle.
 - WEB - The 'web' folder contains all the other static content (HTML, CSS, images etc).
 - package.json - 'package.json' contains the operating instructions for Node and a list of all the dependencies used by the project. The definition of 'start:dev' lives there.
 - 'webpack.config.js' - as it's name suggests, is the configuration for Webpack.
+
+## Also read
+- [import/export](https://alligator.io/js/modules-es6/) statements - Imports and exports are used to share code between Javascript modules (files).
+- [ES6 syntax](https://www.freecodecamp.org/news/write-less-do-more-with-javascript-es6-5fd4a8e50ee2/) - IMO one of the best parts of using transpiled code to built your site is you can save typing by using all the newest syntax features. In particular read-up on object deconstruction and the spread operator. I would not focus on classes too much, the move in the JS community seems to be towards using pure functions and avoiding classes.
+
+## Deploying your site
