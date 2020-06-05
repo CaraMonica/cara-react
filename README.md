@@ -39,3 +39,6 @@ Disclamer : I am not claiming this is the best way to do things and can certianl
 ## Deploying your site
 - Enable Github pages for your fork by going to settings, scrolling down to pages and selecting to user the 'master/docs' folder.
 - Wait a minuite and then navigate to the address shown (e.g. the URL for this repo's pages is [https://jfl110.github.io/cara-react/](https://jfl110.github.io/cara-react/))
+
+## And then...
+-  I would recommend using a libary on-top of React to take care of more frontend stuff for you (i.e. spacings, layouts, common widgets). Take a look at the [Bootstrap React implementation](https://react-bootstrap.github.io/).
